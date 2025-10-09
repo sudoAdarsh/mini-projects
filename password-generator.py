@@ -24,4 +24,4 @@ random.shuffle(password_list)
 password = "".join(password_list)
 
 # Output the generated password
-print(f"Your password is \"{password}\"")
+print(f"Your password is: {password}")
