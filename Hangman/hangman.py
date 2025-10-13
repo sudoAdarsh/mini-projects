@@ -22,7 +22,7 @@ stages = hangman_art.stages
 with open("wordlist.txt", 'r') as file:
     easy_words = list(file.read().splitlines())
 
-# Load hard words from JSON file (expected to be a list or dictionary)
+# Load hard words from JSON file (from a list)
 with open("wordlist.json", 'r') as file:
     hard_words = json.load(file)
 
