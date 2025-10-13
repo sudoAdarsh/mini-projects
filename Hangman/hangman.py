@@ -79,5 +79,3 @@ while not game_over:
     
 print(f"The word was '{word}'")
 
-
-
