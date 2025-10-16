@@ -14,15 +14,14 @@ shift = int(input("Enter shift amount: "))
 def caesar (original_text, shift, operation):
     text = ""
     if operation.startswith('d'):
-        shift *= -1
-        if letter not in alphabet:
+       shift *= -1
+    for letter in original_text:
+        try:
+            shifted_amount = alphabet.index(letter) + shift
+            shifted_amount %= len(alphabet)
+            text += alphabet[shifted_amount]
+        except:
             text += letter
-        else:
-            for letter in original_text:
-                shifted_amount = alphabet.index(letter) + shift
-                shifted_amount %= len(alphabet)
-                text += alphabet[shifted_amount]
-                text += letter
     print(text)
 
 caesar(original_text, shift, operation)
