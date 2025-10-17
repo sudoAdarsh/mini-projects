@@ -1,4 +1,5 @@
 import random
+import art
 
 cards = [11, 2, 3, 4, 5, 6 ,7 ,8 ,9, 10, 10, 10, 10]
 
@@ -90,11 +91,12 @@ def is_bust(check_cards):
         return False
 
 
+
+logo = art.logo
+print(logo)
+
 deal_card()
-
-
 game_end = False
-
 
 while not game_end:
     show_current_hand()
