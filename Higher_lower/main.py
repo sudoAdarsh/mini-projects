@@ -29,7 +29,7 @@ def check(a, b):
         return b
 
 def choose():
-    ask = input("Choose: ").lower().strip()
+    ask = input("Who has more followers? Type 'A' or 'B': ").lower().strip()
     return choice_a if ask.startswith('a') else choice_b
     
 
@@ -44,7 +44,7 @@ def main():
         print("Against B:", display(choice_b))
         choice = choose()
         if choice == check(choice_a, choice_b):
-            print("You win")
+            print("Correct!")
             score += 1
             clear()
             choice_a = choice
