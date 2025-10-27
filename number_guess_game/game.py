@@ -48,10 +48,7 @@ def main():
     while not game_over:
         guess = int(input("\nEnter your guess: "))
 
-        if chances == 0:
-            print("You have 0 chances left.")
-            game_over = True
-        elif guess < number:
+        if guess < number:
             print(f"My number is greater than {guess}")
             chances -= 1
             attempts += 1
@@ -63,6 +60,12 @@ def main():
             print(f"{chances} chances left, Guess again")
         else:
             print(f"Well done! it took you {attempts} attempts to guess this number.")
+            game_over = True
+
+        if chances == 0:
+            print("\nAhh, It looks like you have 0 chances left.")
+            print(f"well my number was {number}")
+            print("Thanks for playing.")
             game_over = True
 
 if __name__ == "__main__":
