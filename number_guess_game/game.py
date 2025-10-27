@@ -18,12 +18,12 @@ def range_of_game():
 
 
 def mode():
-    mode = input("\nSelect game mode 'Easy' or 'Hard': ").lower().strip()
+    foo = input("\nSelect game mode 'Easy' or 'Hard': ").lower().strip()
     try:
-        if mode.startswith('e'):
+        if foo.startswith('e'):
             print("\nYou have selected Easy mode, You have 10 chances to guess the number.")
             return 10
-        elif mode.startswith('h'):
+        elif foo.startswith('h'):
             print("\nYou have selected Hard mode, You have 5 chances to guess the number.")
             return 5
         else:
@@ -46,7 +46,11 @@ def main():
     game_over = False
 
     while not game_over:
-        guess = int(input("\nEnter your guess: "))
+        try:
+            guess = int(input("\nEnter your guess: "))
+        except ValueError:
+            print("Enter a valid input!")
+            guess = int(input("\nEnter your guess: "))
 
         if guess < number:
             print(f"My number is greater than {guess}")
