@@ -29,6 +29,6 @@ for column in range(15):
     x = -350.0
     y += 50
 
-
+timmy.hideturtle()
 print(timmy.pos())
 my_screen.exitonclick()
