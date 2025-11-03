@@ -6,11 +6,11 @@ my_screen.title("Pong")
 my_screen.setup(height=600, width=800)
 my_screen.bgcolor("black")
 
-paddle_posistion = [(350, 0), (-350, 0)]
+paddle_position = [(350, 0), (-350, 0)]
 
 paddles = []
 
-for paddle in paddle_posistion:
+for paddle in paddle_position:
     new_paddle = Paddle()
     new_paddle.goto(paddle)
     new_paddle.create_paddle()
