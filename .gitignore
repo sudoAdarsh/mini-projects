@@ -1,0 +1,7 @@
+# Ignore Python cache directories everywhere
+__pycache__/
+
+# Ignore Python bytecode
+*.pyc
+*.pyo
+*.pyd
