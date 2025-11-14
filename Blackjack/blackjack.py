@@ -1,5 +1,6 @@
 import random
 import art
+import os
 
 cards = [11, 2, 3, 4, 5, 6 ,7 ,8 ,9, 10, 10, 10, 10]
 
@@ -90,7 +91,8 @@ def is_bust(check_cards):
     else:
         return False
 
-
+print(os.name)
+os.system("clear") if os.name == "posix" else os.system("cls")
 
 logo = art.logo
 print(logo)
