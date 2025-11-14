@@ -91,7 +91,6 @@ def is_bust(check_cards):
     else:
         return False
 
-print(os.name)
 os.system("clear") if os.name == "posix" else os.system("cls")
 
 logo = art.logo
