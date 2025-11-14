@@ -37,11 +37,11 @@ while True:
 
     if mode.startswith('e'):
         words = easy_words
-        lives = 6  # Easier mode → more lives
+        lives = 5  # Easier mode → more lives
         break
     elif mode.startswith('h'):
         words = hard_words
-        lives = 4  # Harder mode → fewer lives
+        lives = 5  # Harder mode → fewer lives
         break
     elif mode.startswith('q'):
         print("\nThanks for playing!")
