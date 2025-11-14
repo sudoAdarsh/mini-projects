@@ -34,6 +34,9 @@ A simple command-line Blackjack game where the user plays against the computer. 
    ```bash
    python blackjack.py
    ```
+OR
+
+Download .zip file => [Download zip](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/Blackjack)
 
 ## Demo
 
