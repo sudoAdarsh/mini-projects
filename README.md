@@ -23,4 +23,4 @@ A collection of Python mini-projects.
 | [Hirst Painting](Hirst_painting) | Turtle color painting. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/Hirst_painting) |
 | [Indian States Guess](guess_the_name_of_indian_states) | India map quiz. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/guess_the_name_of_indian_states) |
 | [Squirrel Census](squirrel_census) | CSV analytics. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/squirrel_census) |
-| [Pomodoro Timer](pomodoro) | Pomodoro focus timer | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/pomodoro)
+| [Pomodoro Timer](pomodoro) | Pomodoro focus timer | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/pomodoro) |
