@@ -24,4 +24,4 @@ A collection of Python mini-projects.
 | [Indian States Guess](guess_the_name_of_indian_states) | India map quiz. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/guess_the_name_of_indian_states) |
 | [Squirrel Census](squirrel_census) | CSV analytics. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/squirrel_census) |
 | [Pomodoro Timer](pomodoro) | Pomodoro focus timer | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/pomodoro) |
-| [Password Generator](Password_generator) | Auto password tool. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/Password_generator) |
+| [Password Manager](password_manager) | GUI Password Manager. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/password_manager) |
