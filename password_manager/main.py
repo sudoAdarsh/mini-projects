@@ -1,9 +1,33 @@
 from tkinter import *
 from tkinter import messagebox
+import string
+import random
 
 FONT = ("Noto Sans", 13)
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
+def random_password():
+    # Define character sets
+    letters = string.ascii_letters
+    numbers = string.digits
+    symbols = ['!', '#', '$', '&', '*', '%']
 
+    # Get user input for password composition
+    num_letters = random.randint(8,10)
+    num_symbols = random.randint(2,4)
+    num_digits = random.randint(2,4)
+
+    # Generate the password list based on user input
+    password_list = (
+        random.choices(letters, k=num_letters) +
+        random.choices(symbols, k=num_symbols) + 
+        random.choices(numbers, k=num_digits)
+    )
+
+    # Shuffle and join the list to create the final password
+    random.shuffle(password_list)
+    password = "".join(password_list)
+    password_entry.delete(0 , END)
+    password_entry.insert(0, password)
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
 def save_password():
@@ -64,7 +88,7 @@ password_entry.grid(row=3, column=1, sticky="ew")
 
 # Buttons
 
-generate_password_button = Button(text="Generate Password", font=FONT)
+generate_password_button = Button(text="Generate Password", font=FONT, command=random_password)
 generate_password_button.grid(row=3, column=2)
 
 add_button = Button(text="Add", font=FONT, width=36, command=save_password)
