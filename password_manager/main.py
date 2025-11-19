@@ -1,11 +1,12 @@
 from tkinter import *
 from tkinter import messagebox
+import pyperclip
 import string
 import random
 
 FONT = ("Noto Sans", 13)
-# ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def random_password():
+# ---------------------------- PASSWORD GENERATOR ------------------------------- #
     # Define character sets
     letters = string.ascii_letters
     numbers = string.digits
@@ -28,6 +29,9 @@ def random_password():
     password = "".join(password_list)
     password_entry.delete(0 , END)
     password_entry.insert(0, password)
+    pyperclip.copy(password)
+
+
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
 def save_password():
@@ -43,6 +47,7 @@ def save_password():
         if is_ok:
             with open("data.txt", "a") as file:
                 file.write(f"{website} | {email} | {password}\n")
+                pyperclip.copy(password)
             clear_password()
 
 def clear_password():
