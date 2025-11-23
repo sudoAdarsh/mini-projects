@@ -38,8 +38,6 @@ def show_card():
     canvas.itemconfig(card_bg, image=card_back_img)
 
 
-
-
 ################### UI SETUP ######################
 
 window = Tk()
