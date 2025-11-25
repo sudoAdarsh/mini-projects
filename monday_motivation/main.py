@@ -1,10 +1,15 @@
+from dotenv import load_dotenv
+import os
 import datetime as dt
 import smtplib
 import random
 
-FROM_EMAIL = "your_mail"
-PASSWORD = "your_app_password"        # Note: You have to create a app password for your mail id
-TO_EMAIL = "reciever's_mail"
+
+load_dotenv(dotenv_path="../.env")
+
+FROM_EMAIL = os.getenv("EMAIL")
+PASSWORD = os.getenv("PASSWORD")        # Note: You have to create a app password for your mail id
+TO_EMAIL = os.getenv("TO_EMAIL")
 
 def send_mail():
 
