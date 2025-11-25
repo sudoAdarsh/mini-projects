@@ -1,10 +1,14 @@
+from dotenv import load_dotenv
+import os
 import datetime as dt
 import pandas
 import random
 import smtplib
 
-FROM_EMAIL = "your_email"
-PASSWORD = "your_password"
+load_dotenv(dotenv_path="../.env")
+
+FROM_EMAIL = os.getenv("EMAIL")
+PASSWORD = os.getenv("PASSWORD")
 
 df = pandas.read_csv("birthdays.csv")
 data_dict = df.to_dict(orient="records")
