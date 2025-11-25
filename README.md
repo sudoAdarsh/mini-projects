@@ -25,3 +25,5 @@ A collection of Python mini-projects.
 | [Squirrel Census](squirrel_census) | CSV analytics. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/squirrel_census) |
 | [Pomodoro Timer](pomodoro) | Pomodoro focus timer | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/pomodoro) |
 | [Password Manager](password_manager) | GUI Password Manager. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/password_manager) |
+| [Flashcard App](flash_card) | Flashcards to learn french. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/flash_card) |
+| [Motivational Email](monday_motivation) | Monday Motivation. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/monday_motivation) |
