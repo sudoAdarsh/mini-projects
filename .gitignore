@@ -5,3 +5,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Ignore all env files anywhere in the repo
+.env
+**/*.env
