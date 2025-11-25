@@ -3,8 +3,8 @@ import pandas
 import random
 import smtplib
 
-FROM_EMAIL = "adasrhupadhyay.1234@gmail.com"
-PASSWORD = "zhadupkrqcxkqlcm"
+FROM_EMAIL = "your_email"
+PASSWORD = "your_password"
 
 df = pandas.read_csv("birthdays.csv")
 data_dict = df.to_dict(orient="records")
