@@ -19,7 +19,7 @@ A collection of Python mini-projects.
 | [NATO Alphabet](nato_alphabets) | Word → NATO conversion. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/nato_alphabets) |
 | [Number Guess Game](number_guess_game) | Guess the number. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/number_guess_game) |
 | [Password Generator](Password_generator) | Auto password tool. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/Password_generator) |
-| [Quiz Game](Quiz_game) | Trivia quiz. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/Quiz_game) |
+| [Quiz Game](Quiz_game) | CLI and GUI quiz App. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/Quiz_game) |
 | [Hirst Painting](Hirst_painting) | Turtle color painting. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/Hirst_painting) |
 | [Indian States Guess](guess_the_name_of_indian_states) | India map quiz. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/guess_the_name_of_indian_states) |
 | [Squirrel Census](squirrel_census) | CSV analytics. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/squirrel_census) |
