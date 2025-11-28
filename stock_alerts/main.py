@@ -2,7 +2,6 @@ import requests
 import os
 import smtplib
 from dotenv import load_dotenv
-from twilio.rest import Client
 
 load_dotenv(dotenv_path="../.env")
 
@@ -54,7 +53,7 @@ percentage_diff = round((abs(yesterday_closing_price - day_before_yesterday_clos
 
 message_sent = False
 
-if percentage_diff >= 1:
+if percentage_diff >= 3:
     response = requests.get(NEWS_ENDPOINT, params=news_params)
     articles = response.json()['articles'][:3]
     content = []
@@ -74,7 +73,7 @@ if percentage_diff >= 1:
         send_mail(msg=message)
         message_sent = True
 
-        
+
 if not message_sent:
     print("No mail was sent")
 
