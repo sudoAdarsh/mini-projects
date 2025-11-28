@@ -1,24 +1,80 @@
+import requests
+import os
+import smtplib
+from dotenv import load_dotenv
+from twilio.rest import Client
+
+load_dotenv(dotenv_path="../.env")
+
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-
-## STEP 1: Use https://www.alphavantage.co
-# When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
-
-## STEP 2: Use https://newsapi.org
-# Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
-
-## STEP 3: Use https://www.twilio.com
-# Send a seperate message with the percentage change and each article's title and description to your phone number. 
+STOCK_ENDPOINT = "https://www.alphavantage.co/query"
+NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
+FROM_EMAIL = os.getenv("EMAIL")
+PASSWORD = os.getenv("PASSWORD")
+TO_EMAIL = os.getenv("TO_EMAIL")
+stock_api_key = os.getenv("ALPHAVANTAGE_API")
+news_api_key = os.getenv("NEWS_API")
 
 
-#Optional: Format the SMS message like this: 
-"""
-TSLA: 🔺2%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-or
-"TSLA: 🔻5%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-"""
+def send_mail(msg):
+    with smtplib.SMTP("smtp.gmail.com") as connection:
+        connection.starttls()
+        connection.login(user=FROM_EMAIL, password=PASSWORD)
+        connection.sendmail(
+            from_addr=FROM_EMAIL,
+            to_addrs=TO_EMAIL,
+            msg=f"Subject:Stock Update!\n\n{msg}".encode("utf-8")
+        )
+    print("Mail Sent")
+
+
+stock_params = {
+    "function" : "TIME_SERIES_DAILY",
+    "symbol" : STOCK,
+    "apikey" : stock_api_key
+}
+
+news_params = {
+    "q" : "Tesla",
+    "apiKey" : news_api_key
+}
+
+response = requests.get(STOCK_ENDPOINT, params=stock_params)
+response.raise_for_status()
+data = response.json()["Time Series (Daily)"]
+
+daily_values = [value for (key, value) in data.items()]
+
+yesterday_closing_price = float(daily_values[0]['4. close'])
+day_before_yesterday_closing_price = float(daily_values[1]['4. close'])
+
+
+percentage_diff = round((abs(yesterday_closing_price - day_before_yesterday_closing_price) / ((yesterday_closing_price + day_before_yesterday_closing_price) / 2)) * 100, 2)
+
+message_sent = False
+
+if percentage_diff >= 1:
+    response = requests.get(NEWS_ENDPOINT, params=news_params)
+    articles = response.json()['articles'][:3]
+    content = []
+    for item in articles:
+        content.append(f"Headline: {item['title']}\nBrief: {item['description']}")
+
+    if (yesterday_closing_price - day_before_yesterday_closing_price) < 0:
+        message = f"TSLA: 🔻{percentage_diff}%\n\n"
+        for i in range (3):
+            message += f"{content[i]}\n\n"
+        send_mail(msg=message)
+        message_sent = True
+    else:
+        message = f"TSLA: 🔺{percentage_diff}%\n\n"
+        for i in range (3):
+            message += f"{content[i]}\n\n"
+        send_mail(msg=message)
+        message_sent = True
+
+        
+if not message_sent:
+    print("No mail was sent")
 
