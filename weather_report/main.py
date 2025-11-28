@@ -9,16 +9,17 @@ load_dotenv(dotenv_path="../.env")
 
 FROM_EMAIL = os.getenv("EMAIL")
 PASSWORD = os.getenv("PASSWORD")
+TO_EMAIL = os.getenv("TO_EMAIL")
 api_key = os.getenv("OPENWEATHER_API")
 account_sid = os.getenv("TWILIO_ACC_SID")
 auth_token = os.getenv("TWILIO_AUTH_TOKEN")
 reciever_number = os.getenv("PHONE_NUM")
 
-def send_sms():
+def send_sms(msg):
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-        body="It's Raining today, don't forget your ☂️",
+        body=msg,
         from_="+18624076660",
         to=reciever_number,
     )
@@ -30,16 +31,16 @@ def send_mail():
         connection.login(user=FROM_EMAIL, password=PASSWORD)
         connection.sendmail(
             from_addr=FROM_EMAIL,
-            to_addrs=FROM_EMAIL, 
-            msg=f"Subject:It's Raining today, don't forget your ☂️\n\n{forecast_report}".encode("utf-8")
+            to_addrs=TO_EMAIL,
+            msg=f"Subject:Weather Report\n\n{forecast_report}".encode("utf-8")
         )
     print("Mail Sent")
 
 url = "https://api.openweathermap.org/data/2.5/forecast"
 
 parameters = {
-    "lat" : 7.22,   # 19.19
-    "lon" : 80.4,   # 73.22
+    "lat" : 19.19,   # 19.19
+    "lon" : 73.22,   # 73.22
     "cnt" : 5,
     "appid" : api_key
 }
@@ -67,12 +68,8 @@ for entry in weather_data:
     for time, condition in entry.items():
         forecast_report += (f"{time} : {condition}\n")
 
-
-print(forecast_report)
-
+send_mail()
 if will_rain:
-    send_mail()
-
-
+    send_sms(msg="It's Raining today, don't forget your ☂️")
 else:
-    print("It will be Sunny Today.")
+    send_sms(msg="Looks like clear skies today, have a great day! 🌤️")
