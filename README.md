@@ -31,3 +31,4 @@ A collection of Python mini-projects.
 | [ISS detector](iss_notifier) | Say 'Hii👋' to ISS. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/iss_notifier) |
 | [Weather Report](weather_report) | Get weather report via Mail and SMS. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/weather_report) |
 | [Stock Report](stock_alerts) | Get Tesla stock updates via Mail. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/stock_alerts) |
+| [Habit tracker](habit-tracker) | Track your habits using pixela. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/habit-tracker) |
