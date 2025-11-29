@@ -32,3 +32,4 @@ A collection of Python mini-projects.
 | [Weather Report](weather_report) | Get weather report via Mail and SMS. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/weather_report) |
 | [Stock Report](stock_alerts) | Get Tesla stock updates via Mail. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/stock_alerts) |
 | [Habit tracker](habit-tracker) | Track your habits using pixela. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/habit-tracker) |
+| [Workout tracker](workout_tracker) | Track your workout and calories using AI and Google Sheets. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/workout_tracker) |
