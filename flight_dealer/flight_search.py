@@ -46,7 +46,7 @@ class FlightSearch:
             "returnDate": to_time.strftime("%Y-%m-%d"),
             "adults": "1",
             "currencyCode": "INR",
-            "nonstop": "true",
+            "nonStop": "true",
             "max": "10",
         }
         response = requests.get(url=FLIGHT_ENDPOINT, params=parameters, headers=headers)
@@ -59,4 +59,3 @@ class FlightSearch:
             print("Response body:", response.text)
             return None
         return response.json()
-
