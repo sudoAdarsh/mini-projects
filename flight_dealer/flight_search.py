@@ -1,7 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
-from pprint import pprint
+from datetime import datetime
 
 load_dotenv(dotenv_path="/home/adarshu/Documents/Coding/Python/mini-projects/.env")
 
@@ -37,7 +37,7 @@ class FlightSearch:
         response = requests.get(IATA_ENDPOINT, params=query, headers=headers)
         print(f"Status code: {response.status_code}, IATA Code: {response.text}")
     
-    def find_flights(self, origin_city_code, destination_city_code, from_time, to_time):
+    def check_flights(self, origin_city_code, destination_city_code, from_time, to_time):
         headers = {"Authorization": f"Bearer {self.AUTH_TOKEN}"}
         parameters = {
             "originLocationCode": origin_city_code,
@@ -50,6 +50,13 @@ class FlightSearch:
             "max": "10",
         }
         response = requests.get(url=FLIGHT_ENDPOINT, params=parameters, headers=headers)
-        print(response.text)
-f = FlightSearch()
-f.find_flights()
+
+        if response.status_code != 200:
+            print(f"check_flights() response code: {response.status_code}")
+            print("There was a problem with the flight search.\n"
+                "For details on status codes, check the API documentation:\n"
+                "https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference")
+            print("Response body:", response.text)
+            return None
+        return response.json()
+
