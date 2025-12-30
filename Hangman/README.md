@@ -5,8 +5,10 @@
 ---
 
 ## 🎥 Demo
-▶️ **Demo Video:** `demo.mp4`  
-*(Short screen recording showing the project in action)*
+▶️ **Demo Video:** 
+
+[demo.webm](https://github.com/user-attachments/assets/94b3dbf4-c7f5-4ae2-8a5e-3c44656a4ec1)
+
 
 ---
 
