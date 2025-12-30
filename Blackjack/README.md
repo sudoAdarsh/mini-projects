@@ -5,7 +5,8 @@
 ---
 
 ## 🎥 Demo
-▶️ **Demo Video:** `demo.mp4` 
+
+[Demo.webm](https://github.com/user-attachments/assets/65c9c17b-1e93-4e7d-989d-0e111e49aa49)
 
 
 ---
