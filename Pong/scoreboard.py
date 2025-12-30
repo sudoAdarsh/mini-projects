@@ -4,9 +4,9 @@ class Scoreboard(Turtle):
 
     def __init__(self):
         super().__init__()
-        # self.color("white")
         self.penup()
         self.hideturtle()
+        self.color("black")
         self.l_score = 0
         self.r_score = 0
         self.update_scoreboard()
@@ -36,7 +36,7 @@ class Border(Turtle):
         y_pos = 300
         self.goto(0, y_pos)
         self.setheading(270)
-
+    
         for lines in range(30):
             self.pendown()
             self.forward(10)

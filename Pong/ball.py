@@ -4,7 +4,6 @@ class Ball(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("circle")
-        # self.color("white")
         self.penup()
         self.x_move = 8
         self.y_move = 8
