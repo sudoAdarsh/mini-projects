@@ -27,9 +27,14 @@ A collection of Python mini-projects.
 | [Password Manager](password_manager) | GUI Password Manager. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/password_manager) |
 | [Flashcard App](flash_card) | Flashcards to learn french. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/flash_card) |
 | [Motivational Email](monday_motivation) | Monday Motivation. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/monday_motivation) |
+| [Coding Quotes](coding_quotes) | Coders get your Motivation. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/coding_quotes) |
 | [Birthday Wisher](birthday_wisher) | Send Automated Wishes. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/birthday_wisher) |
 | [ISS detector](iss_notifier) | Say 'Hii👋' to ISS. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/iss_notifier) |
 | [Weather Report](weather_report) | Get weather report via Mail and SMS. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/weather_report) |
 | [Stock Report](stock_alerts) | Get Tesla stock updates via Mail. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/stock_alerts) |
 | [Habit tracker](habit-tracker) | Track your habits using pixela. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/habit-tracker) |
 | [Workout tracker](workout_tracker) | Track your Calories using AI and Google Sheets. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/workout_tracker) |
+| [CS_news](cs_news) | Get latest tech News. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/cs_news) |
+| [Amazon Price Tracker](amazon_price_tracker) | Track your items. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/amazon_price_tracker) |
+| [Cookie Clicker](cookie_clicker) | Automate getting cookies. | [⬇ Click Here](https://download-directory.github.io/?url=https://github.com/sudoAdarsh/mini-projects/tree/main/cookie_clicker) |
+
