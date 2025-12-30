@@ -1,6 +1,6 @@
-# Project Name
+# Hangman
 
-> One-line description of what the project does.
+> Hangman is a word-guessing game where one player thinks of a secret word, represented by dashes, and the other tries to guess it letter by letter, earning points for correct guesses but losing if they complete the drawing of a hanged stick figure before solving the word. 
 
 ---
 
@@ -11,18 +11,16 @@
 ---
 
 ## ✨ Features
-- Feature 1 (clear and concrete)
-- Feature 2
-- Feature 3
+- **Multiple Game modes**: Easy and Hard game difficulties.
+
+- **Limited Attempts**: Players have a fixed number of chances *(i.e. 5)* before they lose the game.
+
+- **Visual Penalty System**: Each incorrect guess adds a specific segment to a drawing of a "hangman" figure or a gallows.
 
 ---
 
 ## 🛠️ Tech Stack
 - **Language:** Python 3.x
-- **Libraries:**  
-  - library_one  
-  - library_two  
-  - library_three  
 
 ---
 
@@ -33,7 +31,7 @@
 git clone https://github.com/sudoAdarsh/mini-projects.git
 
 # Navigate to the project folder
-cd mini-projects/<project-folder-name>
+cd mini-projects/Hangman
 ```
 
 ---
@@ -41,7 +39,5 @@ cd mini-projects/<project-folder-name>
 ## ▶️ Run the Program
 
 ```python
-python main.py
+python hangman.py
 ```
-
-⚠️ Make sure required dependencies are installed.
