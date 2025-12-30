@@ -5,8 +5,9 @@
 ---
 
 ## 🎥 Demo
-▶️ **Demo Video:** `demo.mp4`  
-*(Short screen recording showing the project in action)*
+▶️ **Demo Video:**
+
+
 
 ---
 
@@ -15,7 +16,7 @@
 
 - Player B can control left paddle with `up arrow`and `down arrow` keys.
 
-- To get Dark mode change following values
+- Pong ball's Speed increases as game continues unitl one of the player looses apoint to another.
 
 ---
 

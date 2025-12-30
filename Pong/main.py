@@ -23,7 +23,7 @@ my_screen.onkey(key="Down", fun= right_paddle.down)
 my_screen.onkey(key="w", fun= left_paddle.up)
 my_screen.onkey(key="s", fun= left_paddle.down)
 
-dark_mode = True
+dark_mode = False
 
 if dark_mode:
     my_screen.bgcolor("black")
