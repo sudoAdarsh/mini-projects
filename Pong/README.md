@@ -1,4 +1,4 @@
-# Project Name
+# Pong
 
 > Pong is a simple two-player video game simulating table tennis, where players control paddles to hit a bouncing ball back and forth, aiming to score by getting the ball past the opponent's paddle.
 
