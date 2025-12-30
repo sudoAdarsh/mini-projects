@@ -1,6 +1,6 @@
 # Cross the Road
 
-> One-line description of what the project does.
+> Cross the road is an endless arcade hopper where you guide a cute *turtle* across busy roads.
 
 ---
 
