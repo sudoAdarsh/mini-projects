@@ -7,7 +7,7 @@
 ## 🎥 Demo
 ▶️ **Demo Video:** 
 
-
+[demo.webm](https://github.com/user-attachments/assets/418eb2be-43bf-449b-9866-d22a472d147c)
 
 ---
 
