@@ -26,7 +26,7 @@ game_is_on = True
 
 while game_is_on:
     my_screen.update()
-    time.sleep(0.1)
+    time.sleep(0.1)   # <== Adjust this for speed
 
     snake.move()
 
