@@ -37,11 +37,11 @@ while True:
 
     if mode.startswith('e'):
         words = easy_words
-        lives = 5  # Easier mode → easier words
+        lives = 6  # Easier mode → easier words
         break
     elif mode.startswith('h'):
         words = hard_words
-        lives = 5  # Harder mode → Harder and more complex words
+        lives = 6  # Harder mode → Harder and more complex words
         break
     elif mode.startswith('q'):
         print("\nThanks for playing!")
@@ -53,6 +53,8 @@ while True:
 # Game Setup
 # ---------------------------
 
+# Prepare handman's
+print(stages[6])
 # Choose a random word and prepare game variables
 word = str(random.choice(words)).lower()
 length_of_word = len(word)
@@ -100,15 +102,16 @@ while not game_over:
         print(f"You guessed '{guess}', that's not in the word. You lose a life.")
         print(f"You have {lives} lives left.\n")
 
-        # End game if lives run out
-        if lives == 0:
-            game_over = True
-            print("You have exhausted all your lives.")
-            print("************ GAME OVER ************")
-
     # Show hangman stage corresponding to remaining lives (safe index)
     if lives >= 0 and lives < len(stages):
         print(stages[lives])
+
+    # End game if lives run out
+    if lives == 0:
+        game_over = True
+        print("You have exhausted all your lives.")
+        print("************ GAME OVER ************")
+
 
     # Check win condition
     if "_" not in display:
@@ -118,5 +121,5 @@ while not game_over:
 # ---------------------------
 # Game End
 # ---------------------------
-print(f"The word was '{word}'.")
+print(f"\nThe word was '{word}'.")
 print("Thanks for playing! See you next time 👋")
